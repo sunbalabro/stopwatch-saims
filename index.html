@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//db.onlinewebfonts.com/c/55f96a010646b90457e9bc03d43e2b67?family=Quartz" rel="stylesheet"
+        type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap">
+            <h1> Stop Watch</h1>
+            <div class="scrn">
+                <div class="time">
+                    <h2 id="hour"> 0  </h2><h2>:</h2>
+                    <h2 id="min"> 0   </h2><h2>:</h2>
+                    <h2 id="second"> 0  </h2><h2>:</h2>
+                    <h3 id="milsec"> 0</h3>
+                </div>
+                <div class="btn">
+                    <button  onclick="start()" id="start"> <i class="fa fa-play" aria-hidden="true"></i> Start</button>
+                    <button onclick="stop() " id="pause"> <i class="fa fa-stop" aria-hidden="true"></i> Pause</button>
+                    <button onclick="reset()" id="reset"> <i class="fa fa-refresh" aria-hidden="true"></i> Reset</button>
+                    <button onclick="snap()" id="snap"> <i class="fa fa-refresh" aria-hidden="true"></i> Snap</button>
+                
+                </div>
+                
+            </div>
+            <div class="sn">
+                <h3>Snap</h3>
+                <p id="snaps"></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
